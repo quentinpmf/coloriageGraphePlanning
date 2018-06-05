@@ -1,5 +1,5 @@
 # Coloriage d'un graphe représentant un planning
-<u>TP Projet dans le cadre de l'UV AD70</u>
+<u>TP réalisé dans le cadre de l'UV AD70</u>
 <br><br>
 <b>Description </b>: Coloriage d'un graphe représentant une gestion de planning avec des salles et des demi-journées.
 <br><br>
