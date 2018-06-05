@@ -1,0 +1,107 @@
+<!--
+* Fichier créé par Quentin BOUDINOT le 04/06/2018 à 11:31
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AD70-TP2</title>
+    </head>
+
+    <body>
+        <h1>Création de matrice</h1>
+
+        <form action="index.html">
+            <table>
+                <tr>
+                    <td>Liste d'incompatibilités : </td>
+                    <td><input type="text" size="100" name="liste_incompatibilites"></td>
+                </tr>
+                <tr>
+                    <td>Contrainte d'antériorité n°1 : </td>
+                    <td><input type="text" size="5" name="c1a"> avant <input type="text" size="5" name="c1b"></td>
+                </tr>
+                <tr>
+                    <td>Contrainte d'antériorité n°2 : </td>
+                    <td><input type="text" size="5" name="c2a"> avant <input type="text" size="5" name="c2b"></td>
+                </tr>
+                <tr>
+                    <td>Contrainte d'antériorité n°3 : </td>
+                    <td><input type="text" size="5" name="c3a"> avant <input type="text" size="5" name="c3b"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Valider">
+            <button onclick="window.location.href='index.php'">Reset</button>
+        </form>
+        <hr>
+
+        <div id="incompatibilites_choisies"></div>
+        <div id="contrainte1_choisie"></div>
+        <div id="contrainte2_choisie"></div>
+        <div id="contrainte3_choisie"></div>
+        <br>
+
+        <table id="planning" style="display:none">
+            <tbody>
+                <tr>
+                    <td colspan="5" style="background-color: black; color:white" align="center">Jour 1</td>
+                </tr>
+                <tr id="demi_journee1" bgcolor="#ff4500">
+                    <td colspan="2" rowspan="2">Demi journée 1</td>
+                    <td>Salle n°1</td>
+                    <td>Salle n°2</td>
+                    <td>Salle n°3</td>
+                </tr>
+                <tr id="demi_journee1_creneaux" bgcolor="#ff4500">
+                    <td id="creneau1">&nbsp;</td>
+                    <td id="creneau2">&nbsp;</td>
+                    <td id="creneau3">&nbsp;</td>
+                </tr>
+                <tr id="demi_journee2" bgcolor="#adff2f">
+                    <td colspan="2" rowspan="2">Demi journée 2</td>
+                    <td>Salle n°1</td>
+                    <td>Salle n°2</td>
+                    <td>Salle n°3</td>
+                </tr>
+                <tr id="demi_journee2_creneaux" bgcolor="#adff2f">
+                    <td id="creneau4">&nbsp;</td>
+                    <td id="creneau5">&nbsp;</td>
+                    <td id="creneau6">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="background-color: black; color:white" align="center">Jour 2</td>
+                </tr>
+                <tr id="demi_journee3" bgcolor="yellow">
+                    <td colspan="2" rowspan="2">Demi journée 3</td>
+                    <td>Salle n°1</td>
+                    <td>Salle n°2</td>
+                    <td>Salle n°3</td>
+                </tr>
+                <tr id="demi_journee3_creneaux" bgcolor="yellow">
+                    <td id="creneau7">&nbsp;</td>
+                    <td id="creneau8">&nbsp;</td>
+                    <td id="creneau9">&nbsp;</td>
+                </tr>
+
+                <tr id="demi_journee4" bgcolor="#1e90ff">
+                    <td style='color:white' colspan="2" rowspan="2">Demi journée 4</td>
+                    <td style='color:white'>Salle n°1</td>
+                    <td style='color:white'>Salle n°2</td>
+                    <td style='color:white'>Salle n°3</td>
+                </tr>
+                <tr id="demi_journee4_creneaux" bgcolor="#1e90ff">
+                    <td style='color:white' id="creneau10">&nbsp;</td>
+                    <td style='color:white' id="creneau11">&nbsp;</td>
+                    <td style='color:white' id="creneau12">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="main.js"></script>
+
+    </body>
+
+    <footer>
+        <hr>
+        Quentin BOUDINOT
+    </footer>
+</html>
